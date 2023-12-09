@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* padding: 0;
+            margin: 0; */
+        }
+
+        table,
+        th,
+        td {
+            border: 10px solid blue;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            /* background-color: gray; */
+            padding: 10px;
+        }
+
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: salmon;
+            border: 20px solid brown;
+        }
+        ol, ul {
+        margin: 20px;
+        }
+
+        #nav li{
+            display: inline-block;
+            width: 200px;
+            padding: 15px;
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="400px">
+        <caption>My table</caption>
+        <thead>
+            <tr>
+                <th>One</th>
+                <th>Two</th>
+                <th>Three</th>
+            </tr>
+        </thead>
+        <tbody>
+            <colgroup>
+                <col span="1" style="background-color: aqua; visibility: collapse;">
+                <col span="2" style="background-color: pink;">
+            </colgroup>
+            <tr>
+                <td colspan="2">One</td>
+                <td>Two</td>
+                <!-- <td>Three</td> -->
+            </tr>
+            <tr>
+                <td rowspan="2">One</td>
+                <td>Two</td>
+                <td>Three</td>
+            </tr>
+            <tr>
+                <!-- <td>One</td> -->
+                <td>Two</td>
+                <td>Three</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+    <div></div>
+
+    <ol type="1" start="1">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>
+            <ol type="I" start="10">
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+            </ol>
+        </li>
+    </ol>
+    <ul id="nav" type="square">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <span>Hello world!</span>
+    <dl>
+        <dt>apples
+            <dd>Appleas are sweat or sour.</dd>
+        </dt>
+        <dt>bananas
+            <dd>Bananas are yellow.</dd>
+        </dt>
+    </dl>
+</body>
+
+</html>

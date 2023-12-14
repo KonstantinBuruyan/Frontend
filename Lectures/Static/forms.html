@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            resize: none;
+            overflow-y: scroll;
+        }
+
+        < !-- h1 {
+            color: red;
+        }
+
+        #title {
+            color: green;
+        }
+
+        .one,
+        .two {
+            color: blue;
+        }
+
+        .two {
+            font-size: 4rem;
+        }
+
+        h2.one {
+            color: lime;
+        }
+
+        -->
+    </style>
+</head>
+
+<body>
+    <!-- <h1 id="title" class="one">Hello</h1>
+        <h1 class="one two">People</h1>
+        <h1 class="one">Of</h1>
+        <h1 class="two">Planet</h1>
+        <h1>Earth</h1>
+        <h2 class="one" id="five">Hello</h2> -->
+    <form action="#" method="get">
+        <fieldset>
+            <legend>User data</legend>
+            <label for="user-login">User name</label>
+            <input type="text" name="user-login" id="user-login" placeholder="User name" autocomplete="off"
+                list="names"><br>
+            <Label for="user-pass">Password</Label>
+            <input type="password" name="user-pass" id="user-pass" autofocus><br>
+            <label for="user-email"></label>
+            <input type="email" name="user-email" id="user-email" value="example@example.com" disabled><br>
+        </fieldset>
+        <select name="cars" id="cars" multiple size="6">
+            <optgroup label="German cars">
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="mb">Mercedes-Benz</option>
+            </optgroup>
+
+            <optgroup label="Japan cars">
+                <option value="nissan">Nissan</option>
+                <option value="nissan">Audi</option>
+                <option value="subaru">Subaru</option>
+            </optgroup>
+        </select> <br>
+        <textarea name="message" cols="10" rows="10" readonly>Hello world</TExtarea> <br>
+        <datalist id="names">
+            <option value="jack">Jack</option>
+            <option value="Roman">Roman</option>
+        </datalist>
+        <span>Newsletter</span>
+        <input type="checkbox" name="news" id="news" value="true" checked> <br>
+        CSS<input type="radio" name="prog_lang" id="css" value="css"><br>
+        HTML<input type="radio" name="prog_lang" id="html" value="html"><br>
+        JavaScript<input type="radio" name="prog_lang" id="js" value="js"><br>
+        <input type="color" name="color" id="color"><br>
+        <input type="datetime-local" name="date_local" id="date_local"><br>
+        <input type="datetime" name="date" id="date"><br>
+        <input type="file" name="file" id="file" multiple><br>
+
+        <input type="hidden" name="limit" value="20"><br>
+
+        <input type="number" name="number" id="number" step="0.1"> <br>
+        <input type="range" name="range" id="range" step="2" min="5" max="30">
+        <input type="submit" value="Click me">
+        <button type="submit">Click me instead!</button>
+    </form>
+</body>
+
+</html>

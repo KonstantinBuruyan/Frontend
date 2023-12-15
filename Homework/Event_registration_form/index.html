@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            margin: auto;
+        }
+
+        .margin {
+            margin: 10px;
+        }
+
+        .bkg-color {
+            background-color: antiquewhite;
+        }
+
+        .form {
+            padding: 48px 230px 48px;
+            margin: 50px 700px 50px;
+        }
+
+        .header {
+            margin-bottom: 48px;
+        }
+
+        .font-fm {
+            font-family: cursive;
+            font-size: 1.25rem;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        input[type=text], select, input[type=email], input[type=tel] {
+            width: 650px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form font-fm font-bold bkg-color">
+        <div class="header" style="text-align: center">
+            <h1>
+                Регистрация на занятия  йоги.
+            </h1>
+
+        </div>
+        <div>
+            <form action="#" method="get">
+                <div class="margin">
+                    <label for="level">Выберите интересующий вас класс</label> <br>
+                </div>
+                <div class="margin">
+                    <select name="level" id="level" class="font-fm font-bold bkg-color">
+                        <!--<optgroup label="German cars">-->
+                        <option value="begin">Для начинающих</option>
+                        <option value="inter">Средний уровень</option>
+                        <option value="individual">Индивидуальное занятие</option>
+                        <!--</optgroup>-->
+
+                    </select>
+                </div>
+                <div class="margin">
+                    <fieldset>
+                        <div class="margin">
+                            <label for="name">Имя:</label>
+                        </div>
+                        <div class="margin">
+                            <input class="font-fm bkg-color" type="text" name="name" id="name" />
+                        </div>
+                        <div class="margin ">
+                            <label for="lastname">Фамилия:</label>
+                        </div>
+                        <div class="margin ">
+                            <input class="font-fm bkg-color" type="text" name="lastname" id="lastname" />
+                        </div>
+                       
+                        <div class="margin" >
+                            <label for="eml">Электронная почта:</label>
+                        </div>
+                        <div class="margin ">
+                            <input class="font-fm bkg-color" type="email" name="eml" id="eml" placeholder="name@domain.com" />
+                        </div>
+                       
+
+                        <div class="margin">
+                            <label for="teln">Номер телефона:</label>
+                        </div>
+                        <div class="margin ">
+                            <input class="font-fm bkg-color" type="tel" name="teln" id="teln" placeholder="+372 11111111" />
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="margin inl">
+                    <label for="preference">Есть ли у вас какие-либо особые интересы или требования?</label>
+                </div>
+                <div class="margin">
+                    Я интересуюсь растяжкой <input class="font-fm bkg-color" type="checkbox" name="stretch" id="stretch" value="true" />
+                </div>
+                <div class="margin">
+                    Особое внимание позвоночнику <input class="font-fm bkg-color" type="checkbox" name="spine" id="spine" value="true" />
+                </div>
+                <div class="margin">
+                    Упражнения по борьбе со стрессом <input class="font-fm bkg-color" type="checkbox" name="stress" id="stress" value="true" />
+                </div>
+
+                <div class="margin">
+                    <label for="question">Пожалуйста, задавайте вам вопросы:</label>
+
+                </div>
+                <div class="margin">
+                    <textarea name="question" class="font-fm bkg-color" cols="54" rows="10"></textarea>
+                </div>
+
+
+                <div class="margin">
+                    <input type="submit" class="font-fm bkg-color" value="Отправить" />
+                </div>
+
+                    <!--<br />-->
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

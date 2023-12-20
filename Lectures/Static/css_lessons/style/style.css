@@ -1,0 +1,37 @@
+body {
+    background-color: burlywood;
+}
+
+div:hover p {
+    color: red;
+}
+
+div > p {
+    background-color: khaki;
+}
+
+div ~ p {
+    text-decoration: underline dotted;
+}
+
+div + p {
+    font-size: 30px;
+}
+
+div p:first-child {
+border: 3px solid tomato;
+}
+
+/* odd or even */
+p:nth-child(3) {
+    border: 3px double blue;
+}
+
+.last::before,
+.last::after {
+    content: "***";
+}
+
+p:lang(ee) {
+    display: none;
+}

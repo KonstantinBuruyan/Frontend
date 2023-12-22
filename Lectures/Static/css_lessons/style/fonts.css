@@ -1,0 +1,50 @@
+@font-face{
+    font-family: rubik;
+    src: url("../../fonts/RubikMoonrocks-Regular.ttf");
+    /* font-weight: 400; */
+
+}
+
+h1 {
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  */
+   
+    /* text-shadow: -2px -2px 5px red, 2px 2px 5px blue, 10px 10px 2px green; */
+    /* font-family: 'Rubik Moonrocks', sans-serif;  */
+    font-family: Rubik;
+    /* font-family: 'Titillium Web', sans-serif; */
+    /* font-family: 'Freehand', sans-serif;  */
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 1em;
+    
+}
+
+p {
+    
+/* font-family: 'Titillium Web', sans-serif; */
+    text-align: justify;
+    text-align-last: end;
+   /* direction: rtl;
+   unicode-bidi: bidi-override; */
+   /* text-decoration-line: underline ;
+   text-decoration-style: double;
+   text-decoration-thickness: 5px;
+   text-decoration-color: red; */
+   /* text-decoration: underline overline double dodgerblue; */
+
+   text-transform: capitalize;
+   /* text-indent: 100px;
+   letter-spacing: -1px; */
+   line-height: 2;
+   word-spacing: 20px;
+   white-space: nowrap;
+ 
+}
+span {
+    vertical-align: super;
+}
+
+a {
+    text-decoration: none;
+}

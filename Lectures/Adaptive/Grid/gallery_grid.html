@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container > div {
+            width: 100%;
+
+        }
+
+        .container > div > img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-auto-rows: 200px;
+
+            grid-auto-flow: dense;
+
+            object-fit: cover;
+        }
+
+        .vertical {
+            grid-row: auto / span 2;
+        }
+
+        .horizontal {
+            grid-column: auto / span 2;
+        }
+
+        .large-square{
+            grid-row: auto / span 2;
+            grid-column: auto / span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square"><img src="http://picsum.photos/200/200" alt="random"></div>
+        <div class="vertical"><img src="http://picsum.photos/200/400" alt="random"></div>
+        <div class="horizontal"><img src="http://picsum.photos/400/200" alt="random"></div>
+        <div class="large-square"><img src="http://picsum.photos/400/400" alt="random"></div>
+        <div class="vertical"><img src="http://picsum.photos/200/400" alt="random"></div>
+        <div class="vertical"><img src="http://picsum.photos/200/400" alt="random"></div>
+        <div class="square"><img src="http://picsum.photos/200/200" alt="random"></div>
+        <div class="vertical"><img src="http://picsum.photos/200/400" alt="random"></div>
+        <div class="square"><img src="http://picsum.photos/200/200" alt="random"></div>
+        <div class="horizontal"><img src="http://picsum.photos/400/200" alt="random"></div>
+        <div class="square"><img src="http://picsum.photos/200/200" alt="random"></div>
+        <div class="square"><img src="http://picsum.photos/200/200" alt="random"></div>
+        <div class="horizontal"><img src="http://picsum.photos/400/200" alt="random"></div>
+        <div class="horizontal"><img src="http://picsum.photos/400/200" alt="random"></div>
+        <div class="large-square"><img src="http://picsum.photos/400/400" alt="random"></div>
+        <div class="square"><img src="http://picsum.photos/200/200" alt="random"></div>
+    </div>
+</body>
+</html>

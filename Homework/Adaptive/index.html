@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>�����������</title>
+    <style>
+
+       /* * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }*/
+
+        .flex-container {
+            display: flex;
+            /*display: inline-flex;*/
+            border: solid 0.25em #000;
+            /*flex-direction:column;*/
+            /*width: 60%;*/
+            height:  8.25em;
+            /*flex-wrap: nowrap;*/
+            /*flex-wrap: wrap;*/
+        }
+
+        .inline-flex-container {
+            display: inline-flex;
+            border: 2px solid #ccc;
+            margin-top: 10px;
+        }
+
+      /*  .row {
+            flex-direction: column;
+        }*/
+
+      /*  .row-reverse {
+            flex-direction: row-reverse;
+        }*/
+
+        .column {
+            flex-direction: column;
+        }
+
+        .flex-end {
+            justify-content: flex-end;
+        }
+
+        .center {
+            justify-content: center;
+        }
+
+       .space-between {
+            justify-content: space-between;
+        }
+
+        .space-around {
+            justify-content: space-around;
+        }
+
+        .vflex-start {
+            align-items: flex-start;
+        }
+
+        .vflex-end {
+            align-items: flex-end;
+        }
+
+        .vcenter {
+            align-items: center;
+        }
+
+        .vbaseline {
+            align-items: baseline;
+        }
+
+      /*  .column-reverse {
+            flex-direction: column-reverse;
+        }*/
+/*
+        .group1 {
+            order: -1;
+        }
+
+        .group2 {
+            order: 1;
+        }*/
+
+        .flex-item {
+            text-align: center;
+            font-size: 1em;
+            padding: 1.5em;
+            color: white;
+            opacity: 0.8;
+            margin: 0.2em;
+        }
+
+        .color1 {
+            background-color: #675BA7;
+        }
+
+        .color2 {
+            background-color: #9BC850;
+        }
+
+        .color3 {
+            background-color: #A62E5C;
+        }
+
+        .color4 {
+            background-color: #2A9FBC;
+        }
+
+        .color5 {
+            background-color: #F15B2A;
+        }
+
+        .item1 {
+            background-color: #675BA7;
+            align-self: center;
+        }
+
+        .item2 {
+            background-color: #9BC850;
+            align-self: flex-start;
+        }
+
+        .item3 {
+            background-color: #A62E5C;
+            align-self: flex-end;
+        }
+
+        .item4 {
+            background-color: #2A9FBC;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="flex-container">
+        <div class="flex-item color1">Flex Item 1</div>
+        <div class="flex-item color2">Flex Item 2</div>
+        <div class="flex-item color3">Flex Item 3</div>
+    </div>
+
+    <div class="inline-flex-container">
+        <div class="flex-item color1">Flex Item 1</div>
+        <div class="flex-item color2">Flex Item 2</div>
+        <div class="flex-item color3">Flex Item 3</div>
+    </div>-->
+
+    <!--<h3>Row</h3>
+    <div class="flex-container row">
+        <div class="flex-item color1">Flex Item 1</div>
+        <div class="flex-item color2 group2">Flex Item 2</div>
+        <div class="flex-item color3 group2">Flex Item 3</div>
+        <div class="flex-item color4">Flex Item 4</div>
+        <div class="flex-item color5 group1">Flex Item 5</div>
+    </div>-->
+
+    <!--<h3>Row-reverse</h3>
+    <div class="flex-container row-reverse">
+        <div class="flex-item color1">Flex Item 1</div>
+        <div class="flex-item color2 group2">Flex Item 2</div>
+        <div class="flex-item color3 group2">Flex Item 3</div>
+        <div class="flex-item color4">Flex Item 4</div>
+        <div class="flex-item color5 group1">Flex Item 5</div>
+    </div>-->
+
+    <!--<h3>Column</h3>
+    <div class="flex-container column">
+        <div class="flex-item color1">Flex Item 1</div>
+        <div class="flex-item color2">Flex Item 2</div>
+        <div class="flex-item color3">Flex Item 3</div>
+        <div class="flex-item color4">Flex Item 4</div>
+        <div class="flex-item color5">Flex Item 5</div>
+    </div>-->
+
+    <!--<h3>Column-reverse</h3>
+    <div class="flex-container column-reverse">
+        <div class="flex-item color1">Flex Item 1</div>
+        <div class="flex-item color2">Flex Item 2</div>
+        <div class="flex-item color3">Flex Item 3</div>
+        <div class="flex-item color4">Flex Item 4</div>
+        <div class="flex-item color5">Flex Item 5</div>
+    </div>-->
+
+
+    <h3>Flex-end</h3>
+    <div class="flex-container flex-end vflex-end">
+        <div class="flex-item color1">Flex Item 1</div>
+        <div class="flex-item color2">Flex Item 2</div>
+        <div class="flex-item color3">Flex Item 3</div>
+        <div class="flex-item color4">Flex Item 4</div>
+    </div>
+    <h3>Center</h3>
+    <div class="flex-container center vcenter">
+        <div class="flex-item color1">Flex Item 1</div>
+        <div class="flex-item color2">Flex Item 2</div>
+        <div class="flex-item color3">Flex Item 3</div>
+        <div class="flex-item color4">Flex Item 4</div>
+    </div>
+    <h3>Space-between</h3>
+    <div class="flex-container row space-between vbaseline">
+        <div class="flex-item color1">Flex Item 1</div>
+        <div class="flex-item color2">Flex Item 2</div>
+        <div class="flex-item color3">Flex Item 3</div>
+        <div class="flex-item color4">Flex Item 4</div>
+    </div>
+    <h3>Space-around</h3>
+    <div class="flex-container row space-around vflex-start">
+        <div class="flex-item color1">Flex Item 1</div>
+        <div class="flex-item color2">Flex Item 2</div>
+        <div class="flex-item color3 item3">Flex Item 3</div>
+        <div class="flex-item color4 item4">Flex Item 4</div>
+    </div>
+</body>
+</html>

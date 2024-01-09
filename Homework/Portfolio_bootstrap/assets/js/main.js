@@ -83,7 +83,7 @@
         if (select('#navbar').classList.contains('navbar-mobile')) {
            
             if (ul) {
-                ul.style.display = "block";
+            ul.style.display = "block";
             }
         }
         else {

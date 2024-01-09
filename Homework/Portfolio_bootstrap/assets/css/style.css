@@ -360,9 +360,9 @@ h6 {
             }
 
 
-.navbar-mobile .dropdown > .dropdown-active {
-    display: block;
-}
+    .navbar-mobile .dropdown > .dropdown-active {
+        display: block;
+    }
 
 /*--------------------------------------------------------------
 # Sections General

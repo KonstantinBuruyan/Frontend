@@ -141,7 +141,7 @@ const adultPeoples = []
 
 people.forEach(person => {
     if (person.age >= 18) {
-        adultPeoples.push(person);
+        adultPeoples.push(person.name);
     }
 });
 

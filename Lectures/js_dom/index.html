@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    html, body{
+background-color: black;
+    }
+
+    .container{
+        max-width: 600px;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+        background-color: dodgerblue;
+        border: 3px solid white;
+        border-radius: 15px;
+    }
+
+    #main-heding{
+        color: white;
+        margin: 10px 0;
+    }
+
+    .list-item{
+        background-color: white;
+        list-style-type: none;
+        padding: 5px 50px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 3px;
+    }
+
+    .container.hidden{
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <div class="container" id="food">
+        <h1 id="main-heading">Favourite food types</h1>
+        <ul>
+            <li class="list-item"><span>Fast</span> food</li>
+            <li class="list-item">Thai food</li>
+            <li class="list-item">Mexican food</li>
+            <li class="list-item">Italian food</li>
+            <li class="list-item">Indian food</li>
+        </ul>
+        
+    </div>
+    <dic class="container">
+        <h1 id="heading">Example 1</h1>
+        <button class="btn btn-1" >Push me</button>
+    </dic>
+    <input type="text" name="name" id="name">
+    <button class="btn btn-2">Say hello </button>
+    <script src="script.js"></script>
+</body>
+</html>

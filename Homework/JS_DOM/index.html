@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            /*background-color: black;*/
+            display: flex;
+            height:100vh;
+         
+            justify-content: center;
+         
+            
+        }
+
+        .container {
+            width: 600px;
+            margin: auto;
+            /*margin-top: 250px;*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-color: dodgerblue;
+            border: 3px solid white;
+            border-radius: 15px;
+        }
+
+        .btn{
+            margin:5px;
+
+        }
+        #color{
+            width:95%;
+            text-align:center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">Input color by different formats</h1>
+        <input type="text" name="color" id="color" placeholder="Red; RRGGBB; 9, 100%, 64%, 0.5; 155, 102, 102, 0.5">
+        <button class="btn">Paint me</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -44,7 +44,7 @@ const stock = {
 
 // order(0, production);
 
-let restrauntIsOpen = true;
+
 // const order = (time, work) => {
 //     return new Promise((resolve, reject) => {
 //         if (restrauntIsOpen) {
@@ -130,34 +130,102 @@ let restrauntIsOpen = true;
 
 // order();
 
-// const time = (ms) => {
-//     return new Promise((resolve, reject) => {
-//         if (restrauntIsOpen) {
-//             setTimeout(resolve, ms);
-//         }
-//         else {
-//             reject(console.log("Shop is closed"));
-//         }
-//     })
-// }
+//let restrauntIsOpen = true;
 
-// const kitchen = async () => {
-//     try {
-//         await time(2000);
-//         console.log("meat has been grilled");
-//         await time(1000);
-//         console.log(`${stock.ingrediends[0]} and ${stock.ingrediends[1]} were added`);
-//     }
-//     catch (err) {
-//         console.log("CUSTOMER LEFT ");
-//     }
-//     finally {
-//         console.log("Day ended, shop is closed!");
-//     }
-// }
+//const time = (ms) => {
+//    return new Promise((resolve, reject) => {
+//        if (restrauntIsOpen) {
+//            console.log(`Pausing for ${ms}`);
+//            setTimeout(resolve, ms);
+//        }
+//        else {
+//            throw Error("Shop is closed");
+//            //reject(console.log("Shop is closed"));
+//          //  reject( );
+
+//        }
+//    })
+//}
+
+//const kitchen = async () => {
+//    try {
+//        time(2000).then(() => console.log("meat has been grilled"));
+
+//        restrauntIsOpen = false;
+//        time(1000).then(() => console.log(`${stock.ingrediends[0]} and ${stock.ingrediends[1]} were added`));
+
+//    }
+//    catch (err) {
+//        console.log("CUSTOMER LEFT ");
+//    }
+//    finally {
+//        console.log("Day ended, shop is closed!");
+//    }
+//}
 
 
 
 
-// kitchen();
+//kitchen();
 
+//const p = new Promise((resolve, reject) => {
+//    console.log("Start promise!");
+//    fetch('https://hub.dummyapis.com/delay?seconds=3')
+//        //.then(response => response.json())
+//        .then(response => {
+//            // console.log(response.status);
+//            if (response.status === 200) {
+//                resolve("Success");
+//            }
+//            else {
+//                reject("Failed");
+//            }
+//        }).catch(error => {
+//            // console.log(error);
+//            reject(error.message);
+//        })
+//}
+//);
+////.then(json => console.log(json));
+
+//p.then(data => console.log(data)).catch(error => console.log(error));
+
+//console.log("Pending!");
+
+
+//const f = fetch('https://api.itgid.info/api/delay');
+//    //.then(response => response.json())
+////.then(json => console.log(json));
+
+//console.log(f);
+
+//f.then(response => {
+//    console.log(f);
+//   return response.json();
+//}).then(data => {
+//    console.log(data);
+//});
+
+//const requestHeaders = new Headers();
+//requestHeaders.append("apikey", "6b76ab7dc1d4a505");
+//// цепочка запросов
+//fetch("https://jsonplaceholder.typicode.com/todos/1", {
+//    headers: requestHeaders
+//}).then(response => {
+//    console.log(response);
+//    return response.json();
+//}
+//).then(data => console.log(data.title));
+
+
+//promiseall
+
+const promise = new Promise((resolve, reject) => {
+    fetch('https://api.itgid.info/api/delay').then(response => resolve( response.json()));
+});
+
+const promise2 = new Promise((resolve, reject) => {
+    fetch('https://api.itgid.info/api/test').then(response => resolve(response.json()));
+});
+
+Promise.all([promise, promise2]).then(data => console.log(data[1]));
